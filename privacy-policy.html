@@ -16,26 +16,33 @@
 <body>
 
 <h1>Pause — Privacy Policy</h1>
-<p class="updated">Last updated: September 10, 2026</p>
+<p class="updated">Last updated: October 11, 2026</p>
 
-<p>Pause ("we", "us") is a private shared photo gallery app operated by SpiceeTech. This policy explains what data Pause collects, why, and how you can have it deleted.</p>
+<p>Pause ("we", "us") is a private shared photo gallery app operated by SPICEETECH (PTY) LTD ("SpiceeTech"). This policy explains what data Pause collects, why, and how you can have it deleted.</p>
 
 <h2>What we collect</h2>
 <ul>
   <li><strong>Account info:</strong> email address, username, display name, and an optional profile photo.</li>
-  <li><strong>Content you share:</strong> the photos you upload to a vault, and any reactions/comments on them. Vault media is end-to-end encrypted — it's encrypted on your device before upload, and only members of that vault hold the keys to decrypt it.</li>
-  <li><strong>Push notification token:</strong> if you enable notifications, a device token used to deliver them (via Expo's push service).</li>
+  <li><strong>Content you share:</strong> the photos you upload to a vault, and any reactions on them. Vault media is end-to-end encrypted — it's encrypted on your device before upload, and only members of that vault hold the keys to decrypt it.</li>
+  <li><strong>Encryption key backup:</strong> so you can get your photos back after reinstalling the app or changing phones, a copy of your encryption key is stored with your account. It is locked with your password (and, if you create one, your recovery key) on your device before it is uploaded, so we cannot open it.</li>
+  <li><strong>Push notification token:</strong> if you enable notifications, a device token used to deliver them (via Google's Firebase Cloud Messaging).</li>
+  <li><strong>Subscription details:</strong> if you buy a storage plan, which plan you have, whether it is active, when it renews or ends, and the record of each purchase event. Payments are handled by Google Play. We never see or store your card or bank details.</li>
+  <li><strong>Reports:</strong> if you report a post, the reason and any details you write, who reported it and whose post it was. A copy of the reported photo is encrypted so that only our review team can open it.</li>
   <li><strong>Crash and error diagnostics:</strong> if the app crashes or hits an error, basic technical details (device type, OS version, stack trace) are sent to our error-monitoring provider (Sentry) so we can fix bugs. This does not include your photos.</li>
 </ul>
 
 <h2>How it's stored</h2>
-<p>Account data and vault media are stored with Supabase (hosted in the EU). Access to a vault's content is restricted to that vault's members, enforced at the database level — not just filtered in the app. Vault media is additionally end-to-end encrypted, so even we cannot read it.</p>
+<p>Account data and vault media are stored with Supabase (hosted in the EU). Access to a vault's content is restricted to that vault's members, enforced at the database level — not just filtered in the app. Vault media is additionally end-to-end encrypted, so even we cannot read it. The one exception is a photo that a vault member reports to us: the member's app makes a separate copy of that one photo that our review team can open, so we can act on the report.</p>
 
 <h2>Who we share it with</h2>
-<p>We don't sell your data or share it for advertising. Data is shared only with the service providers that make the app work: Supabase (hosting, database, storage), Sentry (crash/error reporting), and Expo/Google (push notification delivery). Each only receives what it needs to perform its function.</p>
+<p>We don't sell your data or share it for advertising. Data is shared only with the service providers that make the app work: Supabase (hosting, database, storage), Sentry (crash/error reporting), Google Firebase (push notification delivery), and Google Play and RevenueCat (processing and confirming subscription purchases). Each only receives what it needs to perform its function.</p>
+
+<h2>Storage plans and payments</h2>
+<p>Every vault includes 500MB of storage for free. A vault's owner can buy a larger storage plan as a subscription through Google Play. Google Play takes the payment and manages renewals, cancellations and refunds under its own terms. RevenueCat, our subscription service provider, confirms purchases with Google Play and tells us which plan is active. You can cancel at any time in Google Play (Payments &amp; subscriptions → Subscriptions).</p>
+<p>If a paid plan ends and the vault holds more than the free allowance, the vault becomes read-only: its photos stay viewable, but nothing new can be added until space is freed or a plan is bought. We do not delete photos because a plan ended without clear notice well in advance.</p>
 
 <h2>Deleting your data</h2>
-<p>You can delete your account at any time from Settings → Delete Account in the app. This permanently removes your profile, and — if you're the last member of a vault — that vault and everything in it. If a vault has other members, ownership passes to another member so their shared content isn't lost, and your own account and its data are still fully deleted. See <a href="./delete-account.html">how to delete your account</a> for full details, including what to do if you can't open the app.</p>
+<p>You can delete your account at any time from Settings → Delete Account in the app. This permanently removes your profile, and — if you're the last member of a vault — that vault and everything in it. If a vault has other members, ownership passes to another member so their shared content isn't lost, and your own account and its data are still fully deleted. Deleting your account does not cancel a Google Play subscription, so cancel it in Google Play first. Records of past purchases are kept for accounting and legal purposes. See <a href="./delete-account.html">how to delete your account</a> for full details, including what to do if you can't open the app.</p>
 
 <h2>Children's privacy</h2>
 <p>Pause is not directed at children under 13, and we don't knowingly collect data from them.</p>
@@ -44,7 +51,7 @@
 <p>If this policy changes in a meaningful way, we'll update the date above and, where appropriate, notify users in-app.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy or your data? Email <a href="mailto:mongezimthethwa56@gmail.com">mongezimthethwa56@gmail.com</a>.</p>
+<p>Questions about this policy or your data? Email <a href="mailto:admin@spiceetech.co.za">admin@spiceetech.co.za</a>.</p>
 
 </body>
 </html>
